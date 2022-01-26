@@ -1,25 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-*{
-    box-sizing: border-box;
+body,html {
     margin: 0;
-    padding:0;
-    font-family: 'Poppins',sans-serif;
+    padding: 0;
 }
 
-html,body{
-    margin:0;
-    height:100%;
-    overflow:hidden;
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
 }
 
-video{
-    min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
+.text {
+z-index: 2;
+position: relative;
+}
+
+.container {
+    width: 1200px;
+    height:600px;
+    background-image: url("./public/backup2.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
     margin:auto;
-}
+    padding:0;
+  }
