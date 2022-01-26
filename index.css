@@ -7,20 +7,19 @@
     font-family: 'Poppins',sans-serif;
 }
 
-.showcase{
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
+html,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
 }
 
-.menu{
-    display: none;
-}
-
-.mainvideo{
-    height: 100%;
-    width: 100%;
+video{
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
 }
